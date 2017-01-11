@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b8b8b8"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:background="#888888"
+                android:text="Pollme"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="70dp" />
+
+            <Button
+                android:id="@+id/bCreate"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:paddingBottom="0dp"
+                android:text="Create Poll"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/bSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/bHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="History"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/bMyPolls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="My Polls"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/bLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="Find Local Polls"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b8b8b8"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tVRQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:background="#888888"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Question"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/linRes"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRAnswer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="Answer1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbAnswer1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888" />
+
+                    <TextView
+                        android:id="@+id/tvRPercent1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="%A1"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRAnswer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="Answer2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbAnswer2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvRPercent2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="%A2"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRAnswer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="Answer3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:visibility="invisible" />
+
+                    <ProgressBar
+                        android:id="@+id/pbAnswer3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvRPercent3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="310dp"
+                        android:background="#888888"
+                        android:text="%A3"
+                        android:textColor="#FFFFFF"
+                        android:visibility="invisible"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRAnswer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="Answer4"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:visibility="invisible" />
+
+                    <ProgressBar
+                        android:id="@+id/pbAnswer4"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvRPercent4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="310dp"
+                        android:background="#888888"
+                        android:text="%A4"
+                        android:textColor="#FFFFFF"
+                        android:visibility="invisible"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRAnswer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:text="Answer5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:visibility="invisible" />
+
+                    <ProgressBar
+                        android:id="@+id/pbAnswer5"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#888888"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvRPercent5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="310dp"
+                        android:background="#888888"
+                        android:text="%A5"
+                        android:textColor="#FFFFFF"
+                        android:visibility="invisible"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bRSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bRHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_x="0dp"
+                android:layout_y="451dp"
+                android:background="#888888"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

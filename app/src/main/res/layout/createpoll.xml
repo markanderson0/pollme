@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b8b8b8"
+    android:orientation="vertical"
+    tools:context=".CreateSimplePoll" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.46"
+                    android:background="#888888"
+                    android:gravity="center_vertical"
+                    android:text="Select Category"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="5dp" />
+
+                <Spinner
+                    android:id="@+id/spinCategory"
+                    android:layout_width="183dp"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#888888"
+                    android:prompt="@string/spinner_title"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:ems="10"
+                android:hint="Enter a Question"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:textSize="20sp">
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/linScroll"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_weight="0.62"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etAnswer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#888888"
+                    android:ems="10"
+                    android:hint="Enter Answer 1"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:paddingLeft="5dp"
+                    android:password="false"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etAnswer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#888888"
+                    android:ems="10"
+                    android:hint="Enter Answer 2"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etAnswer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#888888"
+                    android:ems="10"
+                    android:hint="Enter Answer 3"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:visibility="invisible"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etAnswer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#888888"
+                    android:ems="10"
+                    android:hint="Enter Answer 4"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:visibility="invisible"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etAnswer5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#888888"
+                    android:ems="10"
+                    android:hint="Enter Answer 5"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:visibility="invisible"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                >
+
+                <Button
+                    android:id="@+id/bAddAnswer"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#888888"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="70dp" />
+
+                <Button
+                    android:id="@+id/bRemoveAnswer"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#888888"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/cbLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="Set to current location                                                  "
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/cbPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#888888"
+                android:text="Make poll private                                                         "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:paddingLeft="5dp"/>
+
+            <Button
+                android:id="@+id/bSubmitPoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#888888"
+                android:text="Sumbit Poll"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
